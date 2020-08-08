@@ -51,6 +51,8 @@
     left: 0;
     color: rgb(77 77 77);
     font-weight: 100;
+    border: 1px solid rgba(0, 0, 0, 0);;
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0);
 }
 
 .Item input[type="text"]:focus {
@@ -58,7 +60,6 @@
 }
 
 .Item input[type="text"].placeholder {
-    border-color: rgba(0, 0, 0, 0);
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -75,6 +76,8 @@
 }
 
 .Item input[type="text"].real {
+    border: 1px solid rgb(153 153 153);
+    box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
     opacity: 0;
     z-index: -1;
 }
