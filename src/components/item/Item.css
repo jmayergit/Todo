@@ -1,0 +1,102 @@
+.Item {
+    position: relative;
+}
+
+.Item button {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: normal;
+    display: none;
+}
+
+.Item:hover button {
+    display: block;
+    color: rgb(204 154 154);
+}
+
+.Item button:hover {
+    color: rgb(175 91 94);
+}
+
+.Item input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    font-size: 24px;
+    height: 100%;
+    width: 45px;
+    margin: 0px;
+}
+
+.Item input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.Item input[type="text"] {
+    font-size: 24px;
+    height: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 45px);
+    margin-left: 45px;
+    padding-left: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Item input[type="text"]:focus {
+    outline: none;
+}
+
+.Item input[type="text"].placeholder {
+    border-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.Item input[type="text"].placeholder.completed {
+    text-decoration: line-through;
+    color: #eee;
+}
+
+.Item input[type="text"].placeholder:hover {
+    cursor: pointer;
+}
+
+.Item input[type="text"].real {
+    opacity: 0;
+    z-index: -1;
+}
+
+.Item input[type="text"].real.editing {
+    opacity: 1;
+    z-index: 1;
+}
+
+.Item label {
+    font-size: 24px;
+    font-family: Arial;
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+.Item label {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+}
+
+.Item label.completed {
+    background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+    text-decoration: line-through;
+    color: #eee;
+}

@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.App h1 {
+  font-size: 100px;
+  color: rgb(175 47 47 / 15%);
+  font-weight: 100;
+}
+
+.App .paper {
+  background: white;
+}

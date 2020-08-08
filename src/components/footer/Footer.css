@@ -1,0 +1,75 @@
+.Footer {
+    position: relative;
+    padding: 0px 15px;
+}
+
+.Footer::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.Footer footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.Footer footer > * {
+    flex-basis: 33.333%;
+}
+
+.Footer footer p {
+    text-align: left;
+}
+
+.Footer .filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer footer .right {
+    text-align: right;
+}
+
+.Footer .filter button {
+    border: 1px solid white;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+.Footer .filter button:hover {
+    border: 1px solid rgb(175 47 47 / 10%);
+}
+
+.Footer .filter button.selected {
+    border: 1px solid rgb(175 47 47 / 20%);
+}
+
+.Footer button {
+    background: none;
+    border: none;
+}
+
+.Footer button:focus {
+    outline: none;
+}
+
+.Footer button:hover {
+    cursor: pointer;
+}
+
+.Footer button.clear:hover {
+    text-decoration: underline;
+}
+
+.Footer button.clear.hide {
+    visibility: hidden;
+}
