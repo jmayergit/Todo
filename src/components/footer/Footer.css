@@ -1,6 +1,7 @@
 .Footer {
     position: relative;
     padding: 0px 15px;
+    color: rgb(119 119 119);
 }
 
 .Footer::before {
@@ -37,6 +38,10 @@
 
 .Footer footer .right {
     text-align: right;
+}
+
+.Footer button {
+    color: rgb(119 119 119);
 }
 
 .Footer .filter button {

@@ -26,6 +26,8 @@
     line-height: 1.4em;
     width: 100%;
     background: rgb(0 0 0 / 1%);
+    color: rgb(77 77 77);
+    font-weight: 100;
 }
 
 .Input input:focus {
